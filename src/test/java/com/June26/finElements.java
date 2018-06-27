@@ -78,27 +78,26 @@ public class finElements {
 			st.selectByIndex(fake.number().numberBetween(1, 4));
 		}
 		
-//		List<WebElement> element= driver.findElements(By.tagName("input"));
-//		List<WebElement> element= driver.findElements(By.tagName("input"));
+	
 	}
 	
 
-//	@Test
-//	public void slideShow() throws InterruptedException {
-//		driver.get("https://www.hbloom.com/Gifts/birthday-flowers");
-//		List<WebElement> images = driver.findElements(By.tagName("img"));
-//		List<String> srcs = new ArrayList<>();
-//		
-//		for(WebElement flower: images) {
-//			srcs.add(flower.getAttribute("src"));
-//		}
-//		
-//		for (String link : srcs) {
-//			driver.get(link);
-//			Thread.sleep(1234);
-//		}
-//		
-//	}
+	@Test
+	public void slideShow() throws InterruptedException {
+		driver.get("https://www.hbloom.com/Gifts/birthday-flowers");
+		List<WebElement> images = driver.findElements(By.tagName("img"));
+		List<String> srcs = new ArrayList<>();
+		
+		for(WebElement flower: images) {
+			srcs.add(flower.getAttribute("src"));
+		}
+		
+		for (String link : srcs) {
+			driver.get(link);
+			Thread.sleep(1234);
+		}
+		
+	}
 	
 	
 	
